@@ -9,7 +9,7 @@ export default function Contact() {
     <input className="input" type="text" name="name" placeholder="Your Name" required />
     <input className="input" type="email" name="email" placeholder="Email" required />
     <input className="input" type="text" name="phone" placeholder="Phone" />
-    <textarea className="input" name="message" rows="4" placeholder="Message"></textarea>
+    <textarea className="input" name="message" rows={4} placeholder="Message"></textarea>
     <button className="btn" type="submit">Send Message</button>
     </form>
     </section>
