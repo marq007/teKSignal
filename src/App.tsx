@@ -1,41 +1,33 @@
-import { Routes, Route, Link } from 'react-router-dom'
-import Home from './pages/Home.tsx'
-import Services from './pages/Services.tsx'
-import About from './pages/About.tsx'
-import Contact from './pages/Contact.tsx'
-import logo from './assets/logo.svg'
-
-
 export default function App() {
-return (
-<div className="min-h-screen flex flex-col">
-<header className="bg-slate-900 text-white px-6 py-4 flex justify-between items-center">
-<div className="flex items-center gap-2">
-<img src={logo} className="h-8" />
-<span className="text-xl font-semibold">TeKSignal</span>
-</div>
-<nav className="space-x-6">
-<Link to="/">Home</Link>
-<Link to="/services">Services</Link>
-<Link to="/about">About</Link>
-<Link to="/contact">Contact</Link>
-</nav>
-</header>
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-950 text-white px-6">
+      <div className="max-w-xl text-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-cyan-400 mb-4">
+          TeKSignal
+        </h1>
 
+        <p className="text-lg md:text-xl text-gray-300 mb-6">
+          Our website is currently under maintenance.
+        </p>
 
-<main className="flex-grow">
-<Routes>
-<Route path="/" element={<Home />} />
-<Route path="/services" element={<Services />} />
-<Route path="/about" element={<About />} />
-<Route path="/contact" element={<Contact />} />
-</Routes>
-</main>
+        <p className="text-gray-400 mb-8">
+          We’re working on delivering professional audio & video solutions —
+          including podcast studios, hall AV setups, and troubleshooting
+          services.
+        </p>
 
-
-<footer className="bg-slate-900 text-slate-300 text-center py-4">
-© {new Date().getFullYear()} TeKSignal · Clean Signal. Clear Results.
-</footer>
-</div>
-)
+        <div className="border-t border-gray-700 pt-6">
+          <p className="text-sm text-gray-500">
+            📧 Contact us:{" "}
+            <a
+              href="mailto:info@teksignal.ca"
+              className="text-cyan-400 hover:underline"
+            >
+              info@teksignal.ca
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
