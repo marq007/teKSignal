@@ -1,9 +1,11 @@
+import teksignalLogo from './assets/teksignal-logo.jpg'
+
 export default function App() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-950 text-white px-6">
       <div className="max-w-xl text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-cyan-400 mb-4">
-          TeKSignal
+          <img src={teksignalLogo} />
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 mb-6">
