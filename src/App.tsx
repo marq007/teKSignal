@@ -1,4 +1,4 @@
-import teksignalLogo from './assets/teksignal-logo.jpg'
+import teksignalLogo from './assets/tek_signal_logo_REVERSE_PNG.png'
 
 export default function App() {
   return (
